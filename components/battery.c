@@ -110,7 +110,7 @@
 			h = timeleft;
 			m = (timeleft - (double)h) * 60;
 
-			return bprintf("%juh %jum", h, m);
+			return bprintf("%ju:%02ju", h, m);
 		}
 
 		return "";
@@ -233,7 +233,6 @@
 				return "?";
 		}
 	}
-
 	const char *
 	battery_remaining(const char *unused)
 	{
@@ -246,6 +245,6 @@
 				|| rem == -1)
 			return NULL;
 
-		return bprintf("%uh %02um", rem / 60, rem % 60);
+		return bprintf("%02u:%02u", rem / 60, rem % 60);
 	}
 #endif

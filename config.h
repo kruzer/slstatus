@@ -63,9 +63,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
+//	{ run_command, "\uf240%s  " ,"cat ~/.dwm_status" },
 	{ battery_perc, "\uf241%s","BAT1"}, 
 	{ battery_remaining, "(%s)  ","BAT1"}, 
 	{ wifi_perc, "\uf1eb%s   ","wlp1s0"}, 
+	{ get_vol , "\uf028%s   ",NULL }, 
+//	{ vol_perc, "\uf028%s   ","/dev/mixer"}, 
   { load_avg,"\uf252%s   ", NULL},
   { temp,"\uf2c8%s", 	"/sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp1_input"},
   { temp,"|%s", 			"/sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp2_input"},
