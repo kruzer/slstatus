@@ -72,7 +72,7 @@ static const struct arg args[] = {
   { load_avg,"\uf252%s   ", NULL},
   { temp,"\uf2c8%s", 	"/sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp1_input"},
   { temp,"|%s", 			"/sys/devices/virtual/thermal/thermal_zone0/hwmon0/temp2_input"},
-  { temp,"|%s", 			"/sys/devices/virtual/thermal/thermal_zone3/hwmon1/temp1_input"},
-  { temp,"|%s   ", 		"/sys/devices/virtual/thermal/thermal_zone6/hwmon3/temp1_input"},
+  { temp,"|%s   ",		"/sys/devices/virtual/thermal/thermal_zone2/hwmon1/temp1_input"},
+//  { temp,"|%s   ", 		"/sys/devices/virtual/thermal/thermal_zone6/hwmon3/temp1_input"},
   { datetime,"\uf017%s" ,"%F %T"}
 };
